@@ -1,0 +1,118 @@
+:root {
+    --cor-fundo: #00030C;
+    --branco-principal: #FFFFFF;
+    --cinza-secundario: #C0C0C0;
+    --botao-azul: #167BF7;
+    --fonte-principal: 'Inter';
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: var(--cor-fundo);
+    color: var(--branco-principal);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+}
+.principal {
+    background-image: url(./assets/aluraplus.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-items: center;
+    text-align: center;
+}
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+}
+.container__caixa {
+    margin: 0 6em;
+}
+.container__titulo {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 33.89px;
+}
+.container__imagem{
+    margin: 1em 0 2em 0;
+}
+.container__botao {
+    background-color: var(--botao-azul);
+    border-radius: 5px;
+    color: var(--branco-principal);
+    padding: 1em;
+    display: block;
+    line-height: 24px;
+    text-decoration: none;
+    margin-bottom: 1em;
+}
+.botao_secundario {
+    background-color: transparent;
+    border: 2px solid var(--branco-principal);
+}
+.container__aviso {
+    font-size: 12px;
+    line-height: 14.52px;
+    color: var(--cinza-secundario);
+}
+.secundario {
+    align-items: center;
+    margin: 0 10em
+}
+.secundario__imagem {
+    width: 80%;
+}
+.secundario__titulo {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 57.6px;
+    margin-bottom: 0.2em;
+}
+.secundario__texto {
+    color: #f9f9f9;
+}
+.secundario__botao {
+    display: inline-block;
+    margin-top: 1em;
+}
+.container__descricao {
+    padding: 2em;
+}
+.dispositivos {
+    text-align: center;
+}
+.dispositivos__titulo {
+    font-size: 48px;
+}
+.dispositivos__lista {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 5em 0;
+}
+.lista__item {
+    font-size: 32px;
+    color: var(--branco-principal);
+}
+.footer {
+    text-align: center;
+}
+.footer__logo {
+    margin: 1em 0;
+}
+.footer_lista {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+.footer__item {
+    margin: 1em 1em;
+}
+.footer__texto {
+    color: var(--cinza-secundario);
+    font-size: 14px;
+    line-height: 1.5em;
+}
